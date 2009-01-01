@@ -1,11 +1,12 @@
 === Locationmap ===
-Contributors: sexybiggetje
+Contributors: martijndeboer
 Tags: location, map, geo
+Stable tag: trunk
+Requires at least: 2.5
+Tested up to: 2.7
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2199830
 
 Builds a map from given location, and draws lines between them.
-
-Font is the fine Semplice Regular from Style-Force.
-http://pixelfonts.style-force.net/
 
 == Description ==
 
@@ -38,7 +39,22 @@ a valid xml should look like the following:
 Want to show the map? Just put `<?php locationmap("mapid"); ?>` in your template. Don't want to hack a new template or existing template together ?
 Just put the following in your post: %locationmap: mapid% .
 
+Font is the fine Semplice Regular from Style-Force.
+http://pixelfonts.style-force.net/
+
+
 == Installation ==
 
-1) Upload the plugin to your plugins folder, and off you go.
-2) Create a valid xml
+- Upload the plugin to your plugins folder, and off you go.
+- Create a valid xml
+- Add a call to locationmap("myMapId"); to your template, or a parsable tag to a post / page.
+
+== Frequently Asked Questions ==
+- I'm getting no text or a warning about the font.
+  - A. Did you specify the font tag ?
+
+- I'd like to have feature x and y, can you implement this ?
+  - A. Give me a try, and if I like it, ill add it. You can send your contributions to me, and i'll add them if it fits the plugin.
+
+- I want to define multiple maps, how do I do it.
+  - A. Just define multiple <map id="myMapId"> blocks, be sure to have unique id's for each map!
